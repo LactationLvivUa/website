@@ -188,6 +188,66 @@ body a:hover {
   display: none;
 }
 
+.article-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-list {
+  display: grid;
+  gap: 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.article-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.article-item:last-child {
+  border-bottom: none;
+}
+
+.article-item:nth-child(odd) {
+  background-color: #fffaf9;
+}
+
+.article-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.article-item:hover {
+  background-color: #fff0ec;
+}
+
+.article-number {
+  display: inline-block;
+  min-width: 28px;
+  color: #ff8570;
+  font-weight: 700;
+}
+
+.article-item a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.article-item a:hover {
+  color: #ff8570;
+  text-decoration: underline;
+}
+
 footer {
   padding-left: 20px;
 }
@@ -203,5 +263,13 @@ footer {
 
   .consultant-phone {
     text-align: center;
+  }
+
+  .article-shell {
+    padding: 12px;
+  }
+
+  .article-item {
+    padding: 14px 16px;
   }
 }
