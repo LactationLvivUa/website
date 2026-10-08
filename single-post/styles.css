@@ -196,12 +196,6 @@ body a:hover {
   font-weight: 500;
 }
 
-.consultant-separator {
-  height: 0;
-  background: transparent;
-  display: none;
-}
-
 .article-shell {
   max-width: 900px;
   margin: 0 auto;
