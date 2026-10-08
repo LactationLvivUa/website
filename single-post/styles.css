@@ -169,6 +169,20 @@ body a:hover {
   background-color: #fff;
 }
 
+.consultant-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.consultant-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .consultant-name {
   font-weight: 600;
   color: #333;
@@ -263,6 +277,11 @@ footer {
 
   .consultant-phone {
     text-align: center;
+  }
+
+  .consultant-avatar {
+    width: 100px;
+    height: 100px;
   }
 
   .article-shell {
