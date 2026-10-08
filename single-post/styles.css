@@ -276,7 +276,7 @@ body a:hover {
   transition: all 0.2s ease;
 }
 
-.menu-item .hotline {
+.menu-item.hotline {
   background-color: #fffaf9;
 }
 
