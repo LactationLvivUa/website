@@ -106,12 +106,6 @@ body a:hover {
   color: rgb(255, 133, 112);
 }
 
-.consultant-shell {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .consultant-header {
   display: flex;
   align-items: center;
