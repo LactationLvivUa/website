@@ -319,6 +319,22 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 15px;
+  }
+
+  .header img {
+    width: 140px;
+    height: auto;
+  }
+
+  .header div {
+    font-size: 1.5rem;
+  }
+
   .consultant-table {
     grid-template-columns: 1fr;
   }
