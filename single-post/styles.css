@@ -6,6 +6,7 @@
   gap: 15px;
   width: 50%;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .header div {
@@ -24,6 +25,7 @@
   color: #383838;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  padding: 0 20px;
 }
 
 .post-header {
@@ -75,10 +77,31 @@
 }
 
 .post-content a {
-  color: #ff8570;
+  color: #000;
   text-decoration: underline;
+}
+
+.post-content a:visited {
+  color: #000;
+}
+
+.post-content a:hover {
+  color: rgb(255, 133, 112);
 }
 
 .important {
   font-weight: 600;
+}
+
+body a {
+  color: #000;
+  text-decoration: underline;
+}
+
+body a:visited {
+  color: #000;
+}
+
+body a:hover {
+  color: rgb(255, 133, 112);
 }
