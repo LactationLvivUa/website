@@ -135,55 +135,69 @@ body a:hover {
 }
 
 .consultant-table {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  background: transparent;
+  border: none;
 }
 
 .consultant-row {
-  display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(180px, 1fr);
-  gap: 24px;
-  padding: 12px 20px;
-  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
   align-items: center;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.consultant-row:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-color: #ff8570;
 }
 
 .consultant-row:last-child {
-  border-bottom: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .consultant-row:nth-child(odd) {
-  background-color: #fafafa;
+  background-color: #fff;
 }
 
 .consultant-name {
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
+  font-size: 18px;
 }
 
 .consultant-phone {
-  color: #666;
-  text-align: left;
+  color: #ff8570;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .consultant-separator {
-  height: 14px;
+  height: 0;
   background: transparent;
+  display: none;
 }
 
 @media (max-width: 600px) {
-  .consultant-row {
+  .consultant-table {
     grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 12px 16px;
+  }
+
+  .consultant-row {
+    padding: 20px 20px;
   }
 
   .consultant-phone {
-    text-align: left;
+    text-align: center;
   }
 }
