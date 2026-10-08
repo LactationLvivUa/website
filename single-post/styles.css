@@ -188,6 +188,10 @@ body a:hover {
   display: none;
 }
 
+footer {
+  padding-left: 20px;
+}
+
 @media (max-width: 600px) {
   .consultant-table {
     grid-template-columns: 1fr;
