@@ -188,6 +188,7 @@ body a:hover {
 .consultant-name {
   font-weight: 600;
   font-size: 18px;
+  color: rgb(255, 133, 112);
 }
 
 .consultant-phone {
