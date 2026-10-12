@@ -392,3 +392,9 @@ footer {
   height: 100%;
   border: 0;
 }
+
+.moved-page {
+  text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
